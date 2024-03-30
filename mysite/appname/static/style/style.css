@@ -1,0 +1,19 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 51px;
+}
+
+form {
+    margin-bottom: 21px;
+}
+
+img {
+    width: 500px;
+}

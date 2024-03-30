@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static "style/style.css" %}">
+</head>
+<body>
+    <h1>Загрузите картинку</h1>
+    <form action="{% url 'process_img' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="image">
+        <button type="submit">Начать обработку</button>
+    </form>
+
+    <img src="{% static "image/newIMGG.jpeg" %}" alt="">
+
+</body>
+</html>
